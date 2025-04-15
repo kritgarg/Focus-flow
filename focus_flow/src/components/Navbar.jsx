@@ -14,18 +14,17 @@ function Navbar() {
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
+        {/* Nav bar top */}
         <div className='navbar'>
-          <Link to='#' className='menu-bars'>
-            <FaIcons.FaBars onClick={showSidebar} />
+          <Link to='#' className='menu-bars' onClick={showSidebar}>
+            {sidebar ? <AiIcons.AiOutlineClose /> : <FaIcons.FaBars />}
           </Link>
         </div>
+
+        {/* Sidebar */}
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>
-            <li className='navbar-toggle'>
-              <Link to='#' className='menu-bars'>
-                <AiIcons.AiOutlineClose />
-              </Link>
-            </li>
+            {/* Remove extra close button here, since it's now in top left */}
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>
