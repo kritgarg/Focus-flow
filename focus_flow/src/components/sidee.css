@@ -1,0 +1,48 @@
+.sidee {
+    background-color: #fff;
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 20px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 10px 10px 0px;
+    font-family: sans-serif;
+  }
+  
+  .sidee .logo {
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    align-self: center;
+  }
+  
+  .sidee ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .sidee li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 70px 12px 60px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+    border-radius: 0px;
+    color: #333;
+    transition: all 0.3s ease;
+    
+  }
+  
+  .sidee li:hover,
+  .sidee li.active {
+    background-color: #ffe8dc;
+    color: #e26c2b;
+    font-weight: bold;
+  }
+  
