@@ -13,13 +13,7 @@
     margin-left: 20px;
   }
   
-  /* .sidee .logo {
-    margin-bottom: 40px;
-    font-size: 24px;
-    font-weight: bold;
-    align-self: center;
-  }
-   */
+  
   .sidee ul {
     list-style: none;
     padding: 0;
@@ -52,9 +46,11 @@
 
 .logo{
   color: black;
-  display: flex;
-  justify-content: center;
-  height: 50px;
-  width: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  text-align: center;
+  font-family: 'MyFont', sans-serif;
 
 }

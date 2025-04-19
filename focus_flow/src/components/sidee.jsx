@@ -5,21 +5,26 @@ import { LuListTodo } from "react-icons/lu";
 import { MdOutlineTimer } from "react-icons/md";
 import { IoChatboxOutline } from "react-icons/io5";
 import { LuFocus } from "react-icons/lu";
-import 'animate.css';
+import { GrProjects } from "react-icons/gr";
+import { MdOutlineTipsAndUpdates } from "react-icons/md";
+import { LuCalendar1 } from "react-icons/lu";
+
+
+
 
 const sidee = () => {
   return (
     <div>
       <div className="sidee"> 
+      <p style={{ fontFamily: 'MyFont' }}  className='logo'>FOCUS FLOW</p>
       <navbar>
-      <p className='logo' > <LuFocus /></p>
-        <li  class="hover-underline"> <MdOutlineDashboard />DASHBOARD</li>
-        <li class="hover-underline" ><LuListTodo /> TO-DO</li>
-        <li class="hover-underline" ><MdOutlineTimer /> POMODORO</li>
-        <li class="hover-underline" ><IoChatboxOutline />CHATGPT</li>
-        <li class="hover-underline" ><IoChatboxOutline />CHATGPT</li>
-        <li class="hover-underline" ><IoChatboxOutline />CHATGPT</li>
-        <li class="hover-underline" ><IoChatboxOutline />CHATGPT</li>
+        <li><MdOutlineDashboard />DASHBOARD</li>
+        <li ><GrProjects />PROJECTS</li>
+        <li ><LuListTodo /> TO-DO</li>
+        <li ><MdOutlineTimer /> POMODORO</li>
+        <li ><MdOutlineTipsAndUpdates />TIPS</li>
+        <li ><LuCalendar1 />CALENDAR</li>
+        <li ><IoChatboxOutline />CHATGPT</li>
       </navbar>
         </div> 
     </div>
