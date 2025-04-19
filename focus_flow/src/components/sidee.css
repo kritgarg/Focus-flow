@@ -37,7 +37,9 @@
   .sidee li:hover,
   .sidee li.active {
     background-color: #ffe8dc;
+    /* background-color: #5c899d; */
     color: #e26c2b;
+    /* color: #FCF9EE; */
     font-weight: bold;
     transform: scale(1.1);
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
