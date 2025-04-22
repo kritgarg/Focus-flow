@@ -49,7 +49,7 @@ const Pomo = () => {
           {!isRunning ? (
             <button
               onClick={() => setIsRunning(true)}
-              className="px-6 py-2 bg-orange-600 text-white rounded-full font-medium hover:bg-orange-500"
+              className="px-6 py-2 bg-[#dd7d4a] text-white rounded-full font-medium hover:bg-orange-500"
             >
               Start
             </button>
