@@ -3,7 +3,7 @@ import todo_icon from '../assets/todo_icon.png';
 import TodoItems from './todoitems';
 
 const Todo = () => {
-  const [todoList, setTodoList] = useState([]);
+  const [todoList, setTodoList] = useState(localStorage.getItem("todos")? JSON.parse(localStorage.getItem("todos")) : []);
   const inputref = useRef();
 
   const add = () => {
@@ -40,7 +40,7 @@ const Todo = () => {
   };
 
   useEffect(() => {
-    console.log(todoList);
+    localStorage.setItem("todos", JSON.stringify(todoList));
   }, [todoList]);
 
   return (
@@ -59,7 +59,7 @@ const Todo = () => {
         />
         <button
           onClick={add}
-          className="border-none rounded-full w-32 h-14 bg-orange-600 text-white text-lg font-medium cursor-pointer"
+          className="border-none rounded-full w-32 h-14 bg-[#dd7d4a] text-white text-lg font-medium cursor-pointer"
         >
           Add+
         </button>
