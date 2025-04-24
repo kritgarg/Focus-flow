@@ -48,13 +48,13 @@ const Preloader = ({ onFinish }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0, scale: 0.95, transition: { duration: 1 } }}
           onClick={handleClick}
-          className="flex flex-col items-center justify-center h-screen bg-orange-100 text-center cursor-pointer px-4"
+          className="flex flex-col items-center justify-center h-screen bg-[#659b98] text-center cursor-pointer px-4"
         >
           <motion.p
             initial={{ y: 40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
-            className="text-2xl font-semibold max-w-md"
+            className="text-2xl font-semibold max-w-md text-white"
           >
             “{quote}”
           </motion.p>
@@ -62,7 +62,7 @@ const Preloader = ({ onFinish }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 0.8 }}
-            className="mt-6 text-sm text-gray-700"
+            className="mt-6 text-sm  text-white font-medium"
           >
             Click to enter
           </motion.span>

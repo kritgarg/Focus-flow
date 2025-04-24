@@ -12,11 +12,14 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.4",
     "animate.css": "^4.1.1",
+    "cally": "^0.8.0",
+    "daisyui": "^5.0.28",
     "framer-motion": "^12.7.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
     "react-pro-sidebar": "^1.1.0",
+    "react-rewards": "^2.1.0",
     "tailwindcss": "^4.1.4"
   },
   "devDependencies": {

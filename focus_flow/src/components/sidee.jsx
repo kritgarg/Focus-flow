@@ -46,7 +46,7 @@ import { RiFocus2Line } from "react-icons/ri";
 const Sidee = () => {
   return (
     <div className="sidee fixed left-0 top-0 h-screen w-60 bg-white shadow-md p-6 font-medium">
-      <p style={{ fontFamily: 'MyFont' }} className='logo text-2xl font-bold mb-8'>FOCUS FLOW</p>
+      <p style={{ fontFamily: 'MyFont' }} className='logo text-2xl font-bold mb-8 ' >FOCUS FLOW</p>
       <nav className="flex flex-col gap-4 text-gray-700">
         <NavLink to="/" className={({ isActive }) => isActive ? 'active-link' : ''}>
           <li><MdOutlineDashboard /> DASHBOARD</li>

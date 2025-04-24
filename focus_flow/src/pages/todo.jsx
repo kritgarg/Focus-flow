@@ -44,10 +44,10 @@ const Todo = () => {
   }, [todoList]);
 
   return (
-    <div className="bg-white place-self-center w-11/12 max-w-md flex flex-col p-7 min-h-[550px] rounded-[20px] m-[140px] shadow-md">
+    <div className="bg-[#F5F5F5] place-self-center w-11/12 max-w-md flex flex-col p-7 min-h-[550px] rounded-[20px] m-[140px] shadow-md">
       <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
         <img src={todo_icon} alt="todo" className="w-8" />
-        <h1 className="text-3xl font-semibold font-serif">To-do List</h1>
+        <h1 className="text-3xl font-semibold font-serif text-black">To-do List</h1>
       </div>
 
       <div className="flex items-center my-7 bg-gray-200 rounded-full">
@@ -55,7 +55,7 @@ const Todo = () => {
           ref={inputref}
           type="text"
           placeholder="Add a new task"
-          className="bg-transparent border-0 outline-none flex-1 h-14 pl-6 pr-2 placeholder:text-slate-600"
+          className="bg-transparent border-0 outline-none flex-1 h-14 pl-6 pr-2 placeholder:text-slate-600 text-black"
         />
         <button
           onClick={add}
