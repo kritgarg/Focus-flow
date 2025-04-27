@@ -4,11 +4,11 @@ import 'cally';
 const Calendar = () => {
   return (
     <div className="p-4">
-      <calendar-date class="cally bg-base-100 border border-base-300 shadow-md rounded-box text-base-content">
+      <calendar-date class="cally bg-[#f5f5f5] border border-base-300 shadow-md rounded-box text-black">
         {/* Previous Button */}
         <svg
           aria-label="Previous"
-          class="fill-current w-4 h-4"
+          class="fill-current w-4 h-4 text-black"
           slot="previous"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -19,7 +19,7 @@ const Calendar = () => {
         {/* Next Button */}
         <svg
           aria-label="Next"
-          class="fill-current w-4 h-4"
+          class="fill-current w-4 h-4 text-black"
           slot="next"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"

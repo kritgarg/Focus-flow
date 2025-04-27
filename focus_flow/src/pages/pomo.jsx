@@ -107,7 +107,7 @@ const Pomo = () => {
   const progressAngle = (timeLeft / totalTime) * 360;
 
   return (
-    <div className="min-h-screen flex justify-center items-center px-4">
+    <div className="px-4">
       <div className="w-80 h-80 rounded-3xl shadow-md flex flex-col justify-center items-center p-6 bg-[#F5F5F5]">
         <div
           className="w-48 h-48 rounded-full flex justify-center items-center"

@@ -29,23 +29,17 @@ import React from 'react';
 import Todo from './todo';
 import Pomo from './pomo';
 import Calendar from './Calender';
+import './dashboard.css'; 
 
 const Dashboard = () => {
   return (
-    <div>
-      <div style={{
-        display: 'flex',
-        alignItems: 'start',
-        justifyContent: 'start',
-        backgroundColor: '#F5F5F5',
-        width: '0px',
-        height: '0px',
-      }}>
-      <Pomo />
-      </div>
-      <Todo />
-      <Calendar />
-    </div>
+<div class="parent">
+    <Pomo />
+    <Todo />
+    <Calendar />
+    
+    
+</div>
   );
 };
 
