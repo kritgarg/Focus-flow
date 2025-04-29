@@ -108,11 +108,11 @@ const Pomo = () => {
 
   return (
     <div className="px-4">
-      <div className="w-80 h-80 rounded-3xl shadow-md flex flex-col justify-center items-center p-6 bg-[#F5F5F5]">
+      <div className="w-80 h-80 rounded-3xl shadow-md flex flex-col justify-center items-center p-6 bg-[#fff] ml-[30px] mt-[20px] ">
         <div
           className="w-48 h-48 rounded-full flex justify-center items-center"
           style={{
-            background: `conic-gradient(#fb923c ${progressAngle}deg, #e5e7eb ${progressAngle}deg)`,
+            background: `conic-gradient(#AF8BEF ${progressAngle}deg, #e5e7eb ${progressAngle}deg)`,
             transition: 'background 1s linear',
             backgroundColor: 'transparent', // Transparent background
           }}
@@ -128,14 +128,14 @@ const Pomo = () => {
           {!isRunning ? (
             <button
               onClick={() => setIsRunning(true)}
-              className="px-6 py-2 bg-[#dd7d4a] text-white rounded-full font-medium hover:bg-orange-500"
+              className="px-6 py-2 bg-[#AF8BEF] text-white rounded-full font-medium hover:bg-[#ccb8ee] cursor-pointer  "
             >
               Start
             </button>
           ) : (
             <button
               onClick={() => setIsRunning(false)}
-              className="px-6 py-2 bg-red-500 text-white rounded-full font-medium hover:bg-red-400"
+              className="px-6 py-2 bg-[#AF8BEF] text-white rounded-full font-medium hover:bg-red-400"
             >
               Pause
             </button>

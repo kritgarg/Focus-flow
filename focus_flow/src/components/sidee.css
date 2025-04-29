@@ -1,6 +1,6 @@
 
 .sidee {
-    background-color: #F5F5F5;
+    background-color: #faf8ff;
     height: 90vh;
     width: 250px;
     display: flex;
@@ -37,18 +37,16 @@
   
   .sidee li:hover,
   .sidee li.active {
-    background-color: #90B6B5;
+    background-color: #dbd9f2;
     /* background-color: #5c899d; */
-    color: WHITE;
-    /* color: #FCF9EE; */
-    font-weight: bold;
-    transform: scale(0.9);
+    color: #8d85e3;
+    transform: scale(1.0);
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     border-radius: 10px;
   }
 
 .logo{
-  color: #659b98;
+  color: #8d85e3;
   font-size: 24px;
   font-weight: bolder;
   margin-bottom: 30px;

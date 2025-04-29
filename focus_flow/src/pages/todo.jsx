@@ -44,7 +44,7 @@ const Todo = () => {
   }, [todoList]);
 
   return (
-    <div className="bg-[#F5F5F5]  w-11/12 max-w-md p-7 min-h-md rounded-[20px] shadow-md">
+    <div className="bg-[#fff] place-self-center  w-11/12 max-w-md  p-7 min-h-[550px] rounded-[20px] m-[0px] shadow-lg ">
       <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
         <img src={todo_icon} alt="todo" className="w-8" />
         <h1 className="text-3xl font-semibold font-serif text-black">To-do List</h1>
@@ -59,11 +59,17 @@ const Todo = () => {
         />
         <button
           onClick={add}
-          className="border-none rounded-full w-32 h-14 bg-[#dd7d4a] text-white text-lg font-medium cursor-pointer"
+          className="border-none rounded-full w-32 h-14 bg-[#AF8BEF] text-white text-lg font-medium cursor-pointer"
         >
           Add+
         </button>
       </div>
+
+      <div className="text-gray-700 font-medium mb-3 text-center">
+  ✅ {todoList.filter(todo => todo.completed).length} of {todoList.length} tasks completed
+</div>
+
+
 
       <div>
         {todoList.map((item) => (

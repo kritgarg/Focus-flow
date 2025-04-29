@@ -48,7 +48,7 @@ const Preloader = ({ onFinish }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0, scale: 0.95, transition: { duration: 1 } }}
           onClick={handleClick}
-          className="flex flex-col items-center justify-center h-screen bg-[#659b98] text-center cursor-pointer px-4"
+          className="flex flex-col items-center justify-center h-screen bg-[#AF8BEF] text-center cursor-pointer px-4"
         >
           <motion.p
             initial={{ y: 40, opacity: 0 }}

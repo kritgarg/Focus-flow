@@ -30,10 +30,14 @@ import Todo from './todo';
 import Pomo from './pomo';
 import Calendar from './Calender';
 import './dashboard.css'; 
+import Searchbar from '../components/Searchbar';
+import TasksCompletedCard from '../components/TasksCompletedCard';
 
 const Dashboard = () => {
   return (
 <div class="parent">
+<TasksCompletedCard  />
+  <Searchbar />
     <Pomo />
     <Todo />
     <Calendar />

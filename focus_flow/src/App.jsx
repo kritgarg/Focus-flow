@@ -114,6 +114,7 @@ import Pomo from './pages/pomo';
 import Dashboard from './pages/dashboard';
 import './assets/fonts/font.css';
 import Preloader from './components/Preloader';
+import TodoPage from './pages/TodoPage'; // Assuming you have a TodoPage component
 
 function App() {
   const [showPreloader, setShowPreloader] = useState(true);
@@ -130,6 +131,7 @@ function App() {
               <Route path="/" element={<Dashboard />} />
               <Route path="/todo" element={<Todo />} />
               <Route path="/pomo" element={<Pomo />} />
+              <Route path="/TodoPage" element={<TodoPage/>} />
               <Route path="*" element={<p className="text-red-600 text-lg">Page Not Found</p>} />
             </Routes>
           </div>

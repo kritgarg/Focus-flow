@@ -54,7 +54,7 @@ const Sidee = () => {
         <NavLink to="/projects" className={({ isActive }) => isActive ? 'active-link' : ''}>
           <li><GrProjects /> PROJECTS</li>
         </NavLink>
-        <NavLink to="/todo" className={({ isActive }) => isActive ? 'active-link' : ''}>
+        <NavLink to="/TodoPage" className={({ isActive }) => isActive ? 'active-link' : ''}>
           <li><LuListTodo /> TO-DO</li>
         </NavLink>
         <NavLink to="/pomo" className={({ isActive }) => isActive ? 'active-link' : ''}>
