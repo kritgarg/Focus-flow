@@ -6,8 +6,10 @@ const TasksCompletedCard = ({ totalTasks, completedTasks }) => {
     ? Math.round((completedTasks / totalTasks) * 100)
     : 0;
 
+
+    
   return (
-    <div className="bg-white rounded-2xl p-6 shadow-md w-full max-w-sm">
+    <div className="bg-white rounded-2xl p-6 shadow-md w-full max-w-sm min-h-[240px] mt-[-20px]  ">
       <div className="flex items-center justify-between">
         <div className="bg-[#E7F9F0] p-3 rounded-xl">
           <FaCheckCircle className="text-[#42C58A] text-xl" />

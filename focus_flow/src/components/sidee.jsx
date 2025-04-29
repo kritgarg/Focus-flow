@@ -51,14 +51,14 @@ const Sidee = () => {
         <NavLink to="/" className={({ isActive }) => isActive ? 'active-link' : ''}>
           <li><MdOutlineDashboard /> DASHBOARD</li>
         </NavLink>
-        <NavLink to="/projects" className={({ isActive }) => isActive ? 'active-link' : ''}>
-          <li><GrProjects /> PROJECTS</li>
-        </NavLink>
         <NavLink to="/TodoPage" className={({ isActive }) => isActive ? 'active-link' : ''}>
           <li><LuListTodo /> TO-DO</li>
         </NavLink>
         <NavLink to="/pomo" className={({ isActive }) => isActive ? 'active-link' : ''}>
           <li><MdOutlineTimer /> POMODORO</li>
+        </NavLink>
+        <NavLink to="/projects" className={({ isActive }) => isActive ? 'active-link' : ''}>
+          <li><GrProjects /> PROJECTS</li>
         </NavLink>
         <NavLink to="/tips" className={({ isActive }) => isActive ? 'active-link' : ''}>
           <li><MdOutlineTipsAndUpdates /> TIPS</li>

@@ -25,26 +25,86 @@
 // export default dashboard
 
 
+// import React from 'react';
+// import Todo from './todo';
+// import Pomo from './pomo';
+// import Calendar from './Calender';
+// import './dashboard.css'; 
+// import Searchbar from '../components/Searchbar';
+// import TasksCompletedCard from '../components/TasksCompletedCard';
+// import RandomQuoteBox from '../components/RandomQuoteBox';
+// import PomoTarget from '../components/PomoTarget';
+// import PomoSessionCounter from '../components/PomoSessionCounter';
+
+// const Dashboard = () => {
+//   return (
+//     <div className="bg-[#f7f7f4] overscroll-none scroll-smooth">
+
+// <div class="parent">
+//   <Searchbar />
+//     <Pomo />
+//     <Todo />
+//     <Calendar />
+// <TasksCompletedCard  />
+//     <RandomQuoteBox />
+    
+    
+// </div>
+//     </div>
+//   );
+// };
+
+// export default Dashboard;
+
+
+
 import React from 'react';
 import Todo from './todo';
 import Pomo from './pomo';
 import Calendar from './Calender';
-import './dashboard.css'; 
 import Searchbar from '../components/Searchbar';
 import TasksCompletedCard from '../components/TasksCompletedCard';
+import RandomQuoteBox from '../components/RandomQuoteBox';
+import PomoTarget from '../components/PomoTarget';
+import PomoSessionCounter from '../components/PomoSessionCounter';
 
 const Dashboard = () => {
   return (
-<div class="parent">
-<TasksCompletedCard  />
-  <Searchbar />
-    <Pomo />
-    <Todo />
-    <Calendar />
-    
-    
+    <div className="bg-[#f7f7f4] min-h-screen p-6">
+      {/* Top Search Bar */}
+      <div className="mb-6">
+        <Searchbar />
+      </div>
+        
+
+
+      {/* Main Dashboard Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* To-Do List */}
+        <div className="col-span-1 mt-[50px]">
+          <Todo />
+        </div>
+
+        {/* Calendar & Tasks Completed */}
+        <div className="flex flex-col gap-6 col-span-1 mt-[35px]" >
+          <Calendar />
+          <TasksCompletedCard />
+        </div>
+
+        {/* Random Quote */}
+        <div className="col-span-1 mt-[50px]  ">
+          <RandomQuoteBox />
+        </div>
+      </div>
+
+
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-[30px] ml-[-30px] ">
+
+      <Pomo />
 </div>
+    </div>
   );
 };
 
 export default Dashboard;
+

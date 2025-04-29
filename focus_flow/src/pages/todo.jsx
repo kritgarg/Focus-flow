@@ -65,7 +65,7 @@ const Todo = () => {
         </button>
       </div>
 
-      <div className="text-gray-700 font-medium mb-3 text-center">
+      <div className="text-gray-700 font-medium mb-3 text-center mt-[20px] mb-[40px]">
   ✅ {todoList.filter(todo => todo.completed).length} of {todoList.length} tasks completed
 </div>
 

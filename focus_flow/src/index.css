@@ -3,7 +3,7 @@
 
 body {
   background-color: #f7f7f4;
-  /* background-color: #FCF9EE; */
-  /* overflow: hidden; */
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
 
 }
