@@ -120,6 +120,7 @@ import Tips from './pages/Tips';
 import Chatgpt from './pages/Chatgpt';
 import Planner from './pages/Planner';
 import ErrorPage from './pages/ErrorPage';
+import Developer from './pages/Developer';
 
 function App() {
   const [showPreloader, setShowPreloader] = useState(true);
@@ -140,6 +141,7 @@ function App() {
               <Route path="/Tips" element={<Tips/>} />
               <Route path="/chatgpt" element={<Chatgpt/>} />
               <Route path="/planner" element={<Planner/>} />
+              <Route path="/developer" element={<Developer/>} />
               <Route path="*" element={<ErrorPage/>} />
             </Routes>
           </div>
@@ -148,5 +150,4 @@ function App() {
     </>
   );
 }
-
 export default App;

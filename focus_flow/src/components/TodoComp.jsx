@@ -9,7 +9,7 @@ const TodoComp = () => {
   const [priority, setPriority] = useState('Medium');
   const [dueDate, setDueDate] = useState('');
 
-  // Load tasks from localStorage on mount
+ 
   useEffect(() => {
     const savedTasks = localStorage.getItem('todoTasks');
     if (savedTasks) {
@@ -17,7 +17,7 @@ const TodoComp = () => {
     }
   }, []);
 
-  // Save tasks to localStorage on every change
+
   useEffect(() => {
     localStorage.setItem('todoTasks', JSON.stringify(tasks));
   }, [tasks]);
