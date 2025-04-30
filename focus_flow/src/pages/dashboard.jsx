@@ -98,7 +98,7 @@ const Dashboard = () => {
       </div>
 
 
-<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-[30px] ml-[-30px] ">
+<div className="mt-[30px] ml-[-30px] ">
 
       <Pomo />
 </div>

@@ -71,7 +71,7 @@ const TodoComp = () => {
           <select
             value={category}
             onChange={(e) => setCategory(e.target.value)}
-            className="p-2 border rounded-md w-40"
+            className="p-2 border rounded-md w-40 cursor-pointer "
           >
             <option value="Personal">Personal</option>
             <option value="Work">Work</option>
@@ -81,7 +81,7 @@ const TodoComp = () => {
           <select
             value={priority}
             onChange={(e) => setPriority(e.target.value)}
-            className="p-2 border rounded-md w-40"
+            className="p-2 border rounded-md w-40 cursor-pointer "
           >
             <option value="High">High</option>
             <option value="Medium">Medium</option>
@@ -92,13 +92,13 @@ const TodoComp = () => {
             type="date"
             value={dueDate}
             onChange={(e) => setDueDate(e.target.value)}
-            className="p-2 border rounded-md w-40"
+            className="p-2 border rounded-md w-40 cursor-pointer text-black "
           />
         </div>
 
         <button
           onClick={addTask}
-          className="mt-2 px-6 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600"
+          className="mt-2 px-6 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600 cursor-pointer"
         >
           + Add Task
         </button>
@@ -147,8 +147,8 @@ const TodoComp = () => {
               </div>
             </div>
             <div className="flex gap-3 text-gray-600 mt-1">
-              <button><FaEdit /></button>
-              <button onClick={() => deleteTask(task.id)}><FaTrash /></button>
+            
+              <button  className='cursor-pointer' onClick={() => deleteTask(task.id)}><FaTrash /></button>
             </div>
           </div>
         ))}

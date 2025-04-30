@@ -41,17 +41,17 @@ const getTitleFromPath = (path) => {
   switch (path) {
     case '/':
       return 'Dashboard';
-    case '/todo':
+    case '/TodoPage':
       return 'To-Do List';
-    case '/pomodoro':
+    case '/pomo':
       return 'Pomodoro Timer';
     case '/tips':
       return 'Productivity Tips';
     case '/music':
       return 'Focus Music';
-    case '/calendar':
-      return 'Calendar';
-    case '/chat':
+    case '/planner':
+      return 'Planner';
+    case '/chatgpt':
       return 'Chat Assistant';
     case '/habit':
       return 'Habit Tracker';

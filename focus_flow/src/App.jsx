@@ -116,6 +116,10 @@ import './assets/fonts/font.css';
 import Preloader from './components/Preloader';
 import TodoPage from './pages/TodoPage'; // Assuming you have a TodoPage component
 import PomoTimerPage from './pages/PomoTimerPage';
+import Tips from './pages/Tips';
+import Chatgpt from './pages/Chatgpt';
+import Planner from './pages/Planner';
+import ErrorPage from './pages/ErrorPage';
 
 function App() {
   const [showPreloader, setShowPreloader] = useState(true);
@@ -133,7 +137,10 @@ function App() {
               <Route path="/todo" element={<Todo />} />
               <Route path="/pomo" element={<PomoTimerPage/>} />
               <Route path="/TodoPage" element={<TodoPage/>} />
-              <Route path="*" element={<p className="text-red-600 text-lg">Page Not Found</p>} />
+              <Route path="/Tips" element={<Tips/>} />
+              <Route path="/chatgpt" element={<Chatgpt/>} />
+              <Route path="/planner" element={<Planner/>} />
+              <Route path="*" element={<ErrorPage/>} />
             </Routes>
           </div>
         </div>

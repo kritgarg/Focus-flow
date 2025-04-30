@@ -54,6 +54,9 @@ const Sidee = () => {
         <NavLink to="/TodoPage" className={({ isActive }) => isActive ? 'active-link' : ''}>
           <li><LuListTodo /> TO-DO</li>
         </NavLink>
+        <NavLink to="/planner" className={({ isActive }) => isActive ? 'active-link' : ''}>
+          <li><LuCalendar1 /> PLANNER</li>
+        </NavLink>
         <NavLink to="/pomo" className={({ isActive }) => isActive ? 'active-link' : ''}>
           <li><MdOutlineTimer /> POMODORO</li>
         </NavLink>
@@ -62,9 +65,6 @@ const Sidee = () => {
         </NavLink>
         <NavLink to="/tips" className={({ isActive }) => isActive ? 'active-link' : ''}>
           <li><MdOutlineTipsAndUpdates /> TIPS</li>
-        </NavLink>
-        <NavLink to="/planner" className={({ isActive }) => isActive ? 'active-link' : ''}>
-          <li><LuCalendar1 /> PLANNER</li>
         </NavLink>
         <NavLink to="/chatgpt" className={({ isActive }) => isActive ? 'active-link' : ''}>
           <li><IoChatboxOutline /> CHATGPT</li>

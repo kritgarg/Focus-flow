@@ -43,8 +43,8 @@ const PomoComp = () => {
         {Object.keys(modes).map((m) => (
           <button
             key={m}
-            className={`px-4 py-2 rounded-full text-sm font-medium ${
-              mode === m ? "bg-purple-300 text-white" : "bg-gray-100"
+            className={`px-4 py-2 rounded-full text-sm font-medium cursor-pointer ${
+              mode === m ? "bg-purple-500 text-white cursor-pointer " : "bg-gray-100"
             }`}
             onClick={() => setMode(m)}
           >
@@ -57,13 +57,13 @@ const PomoComp = () => {
 
       <div className="flex justify-center space-x-4 mb-6">
         <button
-          className="bg-purple-400 text-white px-6 py-2 rounded-md hover:bg-purple-500"
+          className="bg-purple-400 text-white px-6 py-2 rounded-md hover:bg-purple-500 cursor-pointer transition duration-200"
           onClick={() => setIsRunning((prev) => !prev)}
         >
           {isRunning ? "Pause" : "Start"}
         </button>
         <button
-          className="bg-gray-300 px-6 py-2 rounded-md"
+          className="bg-gray-300 px-6 py-2 rounded-md cursor-pointer "
           onClick={() => {
             setIsRunning(false);
             setTimeLeft(modes[mode]);
@@ -71,7 +71,7 @@ const PomoComp = () => {
         >
           Reset
         </button>
-        <button className="bg-gray-200 px-6 py-2 rounded-md">🎵</button>
+
       </div>
 
       <div className="mb-4">
