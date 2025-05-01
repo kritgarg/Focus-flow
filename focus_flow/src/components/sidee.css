@@ -1,51 +1,49 @@
-
 .sidee {
-    background-color: #faf8ff;
-    height: 90vh;
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 30px 20px;
-    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    font-family: sans-serif;
-    margin-left: 20px;
-    margin-top: 30px;
-  }
-  
-  
-  .sidee ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
-  
-  .sidee li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 12px 65px 12px 20px;
-    margin-bottom: 15px;
-    cursor: pointer;
-    border-radius: 0px;
-    color: #333;
-    transition: all 0.3s ease;
-    
-  }
-  
-  .sidee li:hover,
-  .sidee li.active {
-    background-color: #dbd9f2;
-    /* background-color: #5c899d; */
-    color: #8d85e3;
-    transform: scale(1.0);
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-    border-radius: 10px;
-  }
+  background: linear-gradient(to bottom right, #f5f0ff, #ffffff);
+  height: 90vh;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 20px;
+  box-shadow: 0 4px 20px rgba(141, 133, 227, 0.4); /* subtle purple glow */
+  border-radius: 16px;
+  font-family: sans-serif;
+  margin-left: 20px;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+}
 
-.logo{
+.sidee ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidee li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 65px 12px 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #333;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.sidee li:hover,
+.sidee li.active {
+  background-color: #dbd9f2;
+  color: #8d85e3;
+  transform: perspective(500px) translateZ(-5px) scale(0.98); /* subtle inward push */
+  box-shadow: inset 0 0 10px rgba(141, 133, 227, 0.3);
+  border-radius: 12px;
+}
+
+.logo {
   color: #8d85e3;
   font-size: 24px;
   font-weight: bolder;
@@ -53,5 +51,4 @@
   margin-left: 15px;
   text-align: center;
   font-family: 'MyFont', sans-serif;
-
 }

@@ -29,9 +29,9 @@ const Dashboard = () => {
         </div>
 
         {/* Calendar & Tasks Completed */}
-        <div className="flex flex-col gap-6 col-span-1 mt-[35px]" >
+        <div className=" mt-[-300px] ml-[-50px]" >
           <Calendar />
-          <TasksCompletedCard />
+
         </div>
 
         {/* Random Quote */}
