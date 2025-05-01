@@ -7,6 +7,10 @@ import TasksCompletedCard from '../components/TasksCompletedCard';
 import RandomQuoteBox from '../components/RandomQuoteBox';
 import PomoTarget from '../components/PomoTarget';
 import PomoSessionCounter from '../components/PomoSessionCounter';
+import StickyNotes from '../components/StickyNotes';
+import Sticky from '../components/Sticky';
+import DailyReflectionJournal from '../components/DailyReflectionJournal';
+import ProductivityChart from '../components/ProductivityChart';
 
 const Dashboard = () => {
   return (
@@ -15,29 +19,39 @@ const Dashboard = () => {
         <Searchbar />
       </div>
         
-<div className="mt-[30px] ml-[-30px] ">
-
-      <Pomo />
-</div>
 
 
-      {/* Main Dashboard Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {/* To-Do List */}
-        <div className="col-span-1 mt-[50px]">
+
+        <div className="col-span-1  ml-[20px] mb[-40px]">
           <Todo />
         </div>
 
-        {/* Calendar & Tasks Completed */}
-        <div className=" mt-[-300px] ml-[-50px]" >
-          <Calendar />
-
+        <div  className="col-span-1  ml-[10px] mb[-40px]">
+          <Sticky />
+       
         </div>
 
-        {/* Random Quote */}
-        <div className="col-span-1 mt-[50px]  ">
-          <RandomQuoteBox />
+<div className=" ">
+
+      <Pomo />
+
+          <div className=" mt-[20px]">
+            <RandomQuoteBox />
+          </div>
+
+</div>
+
+
+        <div className="col-span-1  ">
+        <DailyReflectionJournal /> 
         </div>
+
+<div className="col-span-1 mt-[480px] ml-[-280px] ">
+
+        <ProductivityChart />
+</div>
+
       </div>
 
 

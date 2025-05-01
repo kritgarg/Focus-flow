@@ -536,7 +536,7 @@ const Pomo = () => {
 
   return (
     <div
-      className="w-[300px] h-[300px] bg-gradient-to-br from-[#EADFFB] to-white rounded-2xl p-4 shadow-xl relative transition-all duration-300 ease-in-out transform hover:translate-y-2 cursor-pointer ml-[40px] "
+      className="w-[370px] h-[300px] bg-gradient-to-br from-[#EADFFB] to-white rounded-2xl p-4 shadow-xl relative transition-all duration-300 ease-in-out transform hover:translate-y-2 cursor-pointer  "
     >
       {/* Glow */}
       <div className="absolute -inset-1 rounded-[1.5rem] blur-2xl opacity-30 bg-purple-300 z-0"></div>
