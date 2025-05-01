@@ -15,6 +15,7 @@ import ProductivityChart from '../components/ProductivityChart';
 const Dashboard = () => {
   return (
     <div className="bg-[#f7f7f4] min-h-screen p-6">
+      
       <div className="mb-6">
         <Searchbar />
       </div>

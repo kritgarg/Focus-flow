@@ -136,7 +136,7 @@ const QuoteComp = () => {
 
   return (
     <div
-      className=" w-[370px] h-[230px] bg-gradient-to-br from-[#f5f0ff] to-[#ffffff] rounded-3xl shadow-xl p-6 text-gray-700 transition-transform hover:scale-[1.02] cursor-pointer "
+      className=" w-[370px] h-[230px] bg-gradient-to-br from-[#f5f0ff] to-[#ffffff] rounded-3xl shadow-xl p-6 text-gray-700 transition-all duration-300 ease-in-out transform hover:translate-y-2 cursor-pointer  "
       style={{ fontFamily: 'Poppins, sans-serif' }}
     >
       <p className="text-xl italic leading-relaxed text-purple-900">"{quote.text}"</p>

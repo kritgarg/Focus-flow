@@ -43,7 +43,7 @@ const Sticky = () => {
   }, [notes]);
 
   return (
-    <div className="w-[360px] max-w-full bg-white rounded-3xl p-6 shadow-xl relative">
+    <div className="w-[360px] max-w-full bg-white rounded-3xl p-6 shadow-xl relative   transition-all duration-300 ease-in-out transform hover:translate-y-2 cursor-pointer  ">
       <div className="absolute -inset-1 rounded-[28px] blur-2xl opacity-30 bg-purple-300 z-0"></div>
 
       <div className="relative z-10 h-[500px] flex flex-col">

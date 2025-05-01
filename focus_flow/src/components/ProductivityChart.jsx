@@ -14,7 +14,7 @@ const ProductivityChart = () => {
   }, []);
 
   return (
-    <div className="bg-white shadow-lg rounded-2xl p-6 mt-6 w-[1150px]  ml-[-100px]   ">
+    <div className="   bg-gradient-to-br from-[#EADFFB] to-white  shadow-lg rounded-2xl p-6 mt-6 w-[1150px]  ml-[-100px]  transition-all duration-300 ease-in-out transform hover:translate-y-2 cursor-pointer   ">
       <h2 className="text-xl font-bold text-purple-600 mb-4">📊 Daily Productivity</h2>
       <ResponsiveContainer width="100%" height={250}>
         <BarChart data={data}>

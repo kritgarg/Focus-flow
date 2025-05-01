@@ -7,7 +7,10 @@ import "./TodoPage.css"
 const TodoPage = () => {
   return (
     <>
+    <div className='mt-[34px]'>
+
       <Searchbar />
+    </div>
     <div class="todo"  className='h-screen text-black mt-[50px]'>
 
       <TodoComp />

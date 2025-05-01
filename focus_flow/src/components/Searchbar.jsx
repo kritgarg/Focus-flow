@@ -65,7 +65,7 @@ const Searchbar = () => {
   const pageTitle = getTitleFromPath(location.pathname);
 
   return (
-    <div className="bg-[white] w-[90%] h-[90px] rounded-[20px] px-2 align-middle flex ml-[70px] shadow-lg items-center justify-between">
+    <div className="bg-[white] w-[96%] h-[90px] rounded-[20px] px-2 align-middle flex ml-[30px] shadow-lg items-center justify-between  bg-gradient-to-br from-[#EADFFB] to-white  mt-[-20px] ">
       <h1 className="text-xl font-semibold ml-4 text-black">{pageTitle}</h1>
 
       <button className="krit mr-4">
