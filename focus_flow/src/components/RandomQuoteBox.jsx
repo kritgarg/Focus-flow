@@ -136,11 +136,11 @@ const QuoteComp = () => {
 
   return (
     <div
-      className=" w-[370px] h-[230px] bg-gradient-to-br from-[#f5f0ff] to-[#ffffff] rounded-3xl shadow-xl p-6 text-gray-700 transition-all duration-300 ease-in-out transform hover:translate-y-2 cursor-pointer  "
+      className="w-full sm:w-[340px] md:w-[350px] h-[180px] sm:h-[210px] md:h-[230px] bg-gradient-to-br from-[#f5f0ff] to-[#ffffff] rounded-3xl shadow-xl p-4 sm:p-5 md:p-6 text-gray-700 transition-all duration-300 ease-in-out transform hover:translate-y-2 cursor-pointer overflow-hidden"
       style={{ fontFamily: 'Poppins, sans-serif' }}
     >
-      <p className="text-xl italic leading-relaxed text-purple-900">"{quote.text}"</p>
-      <p className="text-right text-md font-semibold text-purple-700 mt-[70px]">– {quote.author}</p>
+      <p className="text-base sm:text-lg md:text-xl italic leading-relaxed text-purple-900 line-clamp-4">"{quote.text}"</p>
+      <p className="text-right text-sm sm:text-base md:text-md font-semibold text-purple-700 mt-6 sm:mt-10 md:mt-[70px]">– {quote.author}</p>
     </div>
   );
 };

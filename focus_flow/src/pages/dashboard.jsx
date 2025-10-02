@@ -24,34 +24,26 @@ const Dashboard = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-        <div className="col-span-1  ml-[20px] mb[-40px]">
+        <div className="col-span-1 flex justify-center md:mr-[-30px]">
           <Todo />
         </div>
 
-        <div  className="col-span-1  ml-[10px] mb[-40px]">
+        <div className="col-span-1 flex justify-center md:mr-[30px]">
           <Sticky />
-       
         </div>
 
-<div className=" ">
-
-      <Pomo />
-
-          <div className=" mt-[20px]">
-            <RandomQuoteBox />
-          </div>
-
-</div>
-
-
-        <div className="col-span-1  ">
-        <DailyReflectionJournal /> 
+        <div className="col-span-1 flex flex-col items-center gap-5 md:mr-[60px]">
+          <Pomo />
+          <RandomQuoteBox />
         </div>
 
-<div className="col-span-1 mt-[480px] ml-[-280px] ">
+        <div className="col-span-1 md:col-span-3 flex justify-center pl-1 sm:pl-3 md:pl-1 md:ml-[-100px]md:mb-[-40px]">
+          <DailyReflectionJournal />
+        </div>
 
-        <ProductivityChart />
-</div>
+        <div className="col-span-1 md:col-span-3 flex justify-center  sm:pl-4 md:pl-10 md:mr-[-90px] md:mt-[-30px]"> 
+          <ProductivityChart />
+        </div>
 
       </div>
 

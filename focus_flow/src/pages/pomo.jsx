@@ -32,7 +32,7 @@ const Pomo = () => {
 
   return (
     <div
-      className="w-[370px] h-[300px] bg-gradient-to-br from-[#EADFFB] to-white rounded-2xl p-4 shadow-xl relative transition-all duration-300 ease-in-out transform hover:translate-y-2 cursor-pointer  "
+      className="w-full sm:w-[340px] md:w-[350px] h-[260px] sm:h-[280px] md:h-[300px] bg-gradient-to-br from-[#EADFFB] to-white rounded-2xl p-4 shadow-xl relative transition-all duration-300 ease-in-out transform hover:translate-y-2 cursor-pointer"
     >
       {/* Glow */}
       <div className="absolute -inset-1 rounded-[1.5rem] blur-2xl opacity-30 bg-purple-300 z-0"></div>
@@ -41,14 +41,14 @@ const Pomo = () => {
       <div className="relative z-10 flex flex-col items-center justify-center h-full">
         {/* Circular Timer */}
         <div
-          className="w-36 h-36 rounded-full flex justify-center items-center mb-4"
+          className="w-28 sm:w-32 md:w-36 h-28 sm:h-32 md:h-36 rounded-full flex justify-center items-center mb-4"
           style={{
             background: `conic-gradient(#AF8BEF ${progressAngle}deg, #e5e7eb ${progressAngle}deg)`,
             transition: "background 1s linear",
           }}
         >
-          <div className="w-28 h-28 bg-white rounded-full flex justify-center items-center shadow-sm">
-            <h1 className="text-xl font-bold text-gray-800 bg-gray-200 px-3 py-1 rounded">
+          <div className="w-24 sm:w-24 md:w-28 h-24 sm:h-24 md:h-28 bg-white rounded-full flex justify-center items-center shadow-sm">
+            <h1 className="text-lg sm:text-xl font-bold text-gray-800 bg-gray-200 px-3 py-1 rounded">
               {formatTime(timeLeft)}
             </h1>
           </div>
