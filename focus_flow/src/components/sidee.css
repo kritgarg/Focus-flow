@@ -1,17 +1,26 @@
 .sidee {
   background: linear-gradient(to bottom right, #f5f0ff, #ffffff);
-  height: 90vh;
-  width: 250px;
+  height: 100dvh; /* full device viewport height on mobile */
+  width: 260px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 30px 20px;
+  padding: calc(30px + env(safe-area-inset-top)) 20px calc(20px + env(safe-area-inset-bottom));
   box-shadow: 0 4px 20px rgba(141, 133, 227, 0.4); /* subtle purple glow */
-  border-radius: 16px;
+  border-radius: 0; /* flush edges for drawer on mobile */
   font-family: sans-serif;
-  margin-left: 20px;
-  margin-top: 30px;
-  transition: all 0.3s ease;
+  margin-left: 0;
+  margin-top: 0;
+  transition: transform 0.3s ease;
+  transform: translateX(-110%); /* hidden by default on mobile */
+  overflow-y: auto; /* enable scrolling for long menus */
+  overscroll-behavior: contain; /* avoid background overscroll */
+  -webkit-overflow-scrolling: touch; /* smooth iOS scroll */
+}
+
+/* When open on mobile */
+.sidee.open {
+  transform: translateX(0);
 }
 
 .sidee ul {
@@ -51,4 +60,17 @@
   margin-left: 15px;
   text-align: center;
   font-family: 'MyFont', sans-serif;
+}
+
+/* Desktop/tablet overrides */
+@media (min-width: 768px) {
+  .sidee {
+    height: 90vh;
+    width: 250px;
+    border-radius: 16px;
+    margin-left: 20px;
+    margin-top: 30px;
+    transform: none; /* always visible on desktop */
+    overflow-y: auto; /* allow scroll on smaller laptop screens */
+  }
 }

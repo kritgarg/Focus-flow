@@ -5,13 +5,12 @@ import ChatComp from '../components/ChatComp'
 const Chatgpt = () => {
   return (
     <>
-    <div className='mt-[34px]'>
-
-    <Searchbar />
-    </div>
-    <div className=' h-screen mt-[100px] text-black '>
-      <ChatComp />
-    </div>
+      <div className="mt-6 px-3 sm:px-4">
+        <Searchbar />
+      </div>
+      <div className="mt-6 px-3 sm:px-4 text-black">
+        <ChatComp />
+      </div>
     </>
   )
 }
