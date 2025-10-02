@@ -30,7 +30,7 @@ const Searchbar = () => {
   const pageTitle = getTitleFromPath(location.pathname);
 
   return (
-    <div className="w-full md:w-[92%] lg:w-[82%] xl:w-[72%] mx-auto bg-gradient-to-br from-[#EADFFB] to-white rounded-2xl px-3 sm:px-6 py-4 sm:py-5 flex items-center justify-between shadow-lg">
+    <div className="w-full md:w-[96%] lg:w-[88%] xl:w-[95%] mx-auto bg-gradient-to-br from-[#EADFFB] to-white rounded-2xl px-3 sm:px-6 py-4 sm:py-5 flex items-center justify-between shadow-lg">
       <h1 className="text-base sm:text-xl font-semibold ml-1 sm:ml-2 text-black truncate">{pageTitle}</h1>
 
       <button className="krit mr-2 sm:mr-4" aria-label="Notifications">

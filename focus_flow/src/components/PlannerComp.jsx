@@ -42,20 +42,22 @@ export default function PlannerComp() {
   };
 
   const handleFilter = (cat) => setFilter(cat);
-
   const filtered = filter === "All"
     ? schedule
     : schedule.filter((task) => task.category === filter);
 
   return (
-    <div className="p-6 max-w-4xl mx-auto">
-      <h2 className="text-2xl font-bold mb-2">Today's Schedule</h2>
+    <div className="w-full md:w-[92%] lg:w-[82%] xl:w-[72%] mx-auto p-4 sm:p-6">
+      <h2 className="text-xl sm:text-2xl font-bold mb-2">Today's Schedule</h2>
       <div className="mb-4 flex flex-wrap gap-2">
-        {["All", ...Object.keys(categories)].map((cat) => (
+        {[
+          "All",
+          ...Object.keys(categories)
+        ].map((cat) => (
           <button
             key={cat}
             onClick={() => handleFilter(cat)}
-            className={`px-3 py-1 rounded-full text-sm ${
+            className={`px-3 py-1 rounded-full text-xs sm:text-sm ${
               filter === cat ? "bg-gray-800 text-white" : "bg-gray-200"
             }`}
           >
@@ -64,39 +66,41 @@ export default function PlannerComp() {
         ))}
       </div>
 
-      {filtered.map((task, i) => (
-        <div
-          key={i}
-          className={`flex items-center justify-between mb-3 p-3 rounded-lg   ${categories[task.category]?.color || "bg-gray-100"}`}
-        >
-          <input
-            value={task.time}
-            onChange={(e) => handleChange(i, "time", e.target.value)}
-            className="w-24 mr-4 bg-transparent border-b border-gray-400 text-sm focus:outline-none"
-          />
-          <div className="flex-1 flex items-center">
-            <span className="text-xl mr-2">{categories[task.category]?.icon}</span>
-            <input
-              value={task.activity}
-              onChange={(e) => handleChange(i, "activity", e.target.value)}
-              className="flex-1 bg-transparent border-b border-gray-400 text-sm focus:outline-none"
-            />
-          </div>
-          <select
-            value={task.category}
-            onChange={(e) => handleChange(i, "category", e.target.value)}
-            className="ml-4 text-sm bg-white border rounded"
+      <div className="space-y-3">
+        {filtered.map((task, i) => (
+          <div
+            key={i}
+            className={`flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 p-3 rounded-lg ${categories[task.category]?.color || "bg-gray-100"}`}
           >
-            {Object.keys(categories).map((cat) => (
-              <option key={cat} value={cat}>{cat}</option>
-            ))}
-          </select>
-        </div>
-      ))}
+            <input
+              value={task.time}
+              onChange={(e) => handleChange(i, "time", e.target.value)}
+              className="w-full sm:w-28 bg-transparent border-b border-gray-400 text-sm focus:outline-none"
+            />
+            <div className="flex-1 flex items-start sm:items-center gap-2">
+              <span className="text-xl">{categories[task.category]?.icon}</span>
+              <input
+                value={task.activity}
+                onChange={(e) => handleChange(i, "activity", e.target.value)}
+                className="flex-1 bg-transparent border-b border-gray-400 text-sm focus:outline-none"
+              />
+            </div>
+            <select
+              value={task.category}
+              onChange={(e) => handleChange(i, "category", e.target.value)}
+              className="sm:ml-2 text-sm bg-white border rounded px-2 py-1"
+            >
+              {Object.keys(categories).map((cat) => (
+                <option key={cat} value={cat}>{cat}</option>
+              ))}
+            </select>
+          </div>
+        ))}
+      </div>
 
       <button
         onClick={handleAdd}
-        className="mt-6 flex items-center gap-2 bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 cursor-pointer "
+        className="mt-6 flex items-center justify-center gap-2 bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 cursor-pointer w-full sm:w-auto"
       >
         <FiPlus /> Add Task
       </button>

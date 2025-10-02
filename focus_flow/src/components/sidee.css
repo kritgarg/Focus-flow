@@ -74,3 +74,28 @@
     overflow-y: auto; /* allow scroll on smaller laptop screens */
   }
 }
+
+/* Mobile-specific sizing and spacing */
+@media (max-width: 767px) {
+  .sidee {
+    width: 280px; /* slightly wider so text isn't cramped */
+  }
+
+  .logo {
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+
+  .sidee li {
+    gap: 14px; /* larger, even gap between icon and text */
+    padding: 14px 24px; /* equal left/right padding, balanced look */
+    margin-bottom: 12px;
+    font-size: 16px; /* larger text on phones */
+    line-height: 1.25;
+  }
+
+  .sidee li svg {
+    width: 22px;
+    height: 22px; /* larger icons to match text */
+  }
+}

@@ -36,15 +36,15 @@ const PomoComp = () => {
   };
 
   return (
-    <div className="p-8 bg-white rounded-xl shadow-md w-full max-w-3xl mx-auto mt-8">
-      <h1 className="text-2xl font-semibold mb-6 text-center">Focus Timer</h1>
+    <div className="w-full md:w-[92%] lg:w-[82%] xl:w-[72%] mx-auto mt-6 p-5 sm:p-6 bg-white rounded-xl shadow-md">
+      <h1 className="text-xl sm:text-2xl font-semibold mb-5 sm:mb-6 text-center">Focus Timer</h1>
 
-      <div className="flex justify-center space-x-4 mb-6">
+      <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-5 sm:mb-6">
         {Object.keys(modes).map((m) => (
           <button
             key={m}
-            className={`px-4 py-2 rounded-full text-sm font-medium cursor-pointer ${
-              mode === m ? "bg-purple-500 text-white cursor-pointer " : "bg-gray-100"
+            className={`px-3 sm:px-4 py-2 rounded-full text-sm font-medium cursor-pointer ${
+              mode === m ? "bg-purple-500 text-white" : "bg-gray-100"
             }`}
             onClick={() => setMode(m)}
           >
@@ -53,17 +53,17 @@ const PomoComp = () => {
         ))}
       </div>
 
-      <div className="text-6xl font-bold text-center mb-6">{formatTime(timeLeft)}</div>
+      <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-5 sm:mb-6">{formatTime(timeLeft)}</div>
 
-      <div className="flex justify-center space-x-4 mb-6">
+      <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mb-6">
         <button
-          className="bg-purple-400 text-white px-6 py-2 rounded-md hover:bg-purple-500 cursor-pointer transition duration-200"
+          className="w-full sm:w-auto bg-purple-500 text-white px-5 sm:px-6 py-2 rounded-md hover:bg-purple-600 cursor-pointer transition duration-200"
           onClick={() => setIsRunning((prev) => !prev)}
         >
           {isRunning ? "Pause" : "Start"}
         </button>
         <button
-          className="bg-gray-300 px-6 py-2 rounded-md cursor-pointer "
+          className="w-full sm:w-auto bg-gray-200 px-5 sm:px-6 py-2 rounded-md cursor-pointer hover:bg-gray-300"
           onClick={() => {
             setIsRunning(false);
             setTimeLeft(modes[mode]);
@@ -75,7 +75,7 @@ const PomoComp = () => {
       </div>
 
       <div className="mb-4">
-        <label className="block font-medium mb-1">What are you working on?</label>
+        <label className="block font-medium mb-1 text-sm sm:text-base">What are you working on?</label>
         <input
           type="text"
           value={task}
@@ -85,7 +85,7 @@ const PomoComp = () => {
         />
       </div>
 
-      <div className="flex justify-between text-sm text-gray-600">
+      <div className="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-2 text-xs sm:text-sm text-gray-600">
         <span>Sessions Completed Today: {sessionCount}</span>
         <span>Mode: {mode.charAt(0).toUpperCase() + mode.slice(1)}</span>
       </div>

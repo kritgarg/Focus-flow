@@ -1,5 +1,4 @@
 import React from 'react'
-import Todo from './todo'
 import TodoComp from '../components/TodoComp'
 import Searchbar from '../components/Searchbar'
 import "./TodoPage.css"
@@ -7,15 +6,12 @@ import "./TodoPage.css"
 const TodoPage = () => {
   return (
     <>
-    <div className='mt-[34px]'>
-
-      <Searchbar />
-    </div>
-    <div class="todo"  className='h-screen text-black mt-[50px]'>
-
-      <TodoComp />
-
-    </div>
+      <div className="mt-6 px-3 sm:px-4">
+        <Searchbar />
+      </div>
+      <div className="mt-6 px-3 sm:px-4 text-black">
+        <TodoComp />
+      </div>
     </>
   )
 }

@@ -38,32 +38,33 @@ const TipComp = () => {
   };
 
   return (
-    <div className="p-6 max-w-3xl mx-auto text-gray-800">
-      <h2 className="text-xl font-bold mb-4">💡 Tip of the Day</h2>
-      <div className="bg-yellow-100 p-4 rounded-md mb-6">
-        <p className="italic text-lg">"{currentTip.text}"</p>
-        <span className="mt-2 inline-block px-3 py-1 text-sm rounded-full bg-gray-200">{currentTip.category}</span>
+    <div className="w-full md:w-[92%] lg:w-[82%] xl:w-[72%] mx-auto p-4 sm:p-6 text-gray-800">
+      <h2 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">💡 Tip of the Day</h2>
+      <div className="bg-yellow-100 p-3 sm:p-4 rounded-md mb-5 sm:mb-6">
+        <p className="italic text-base sm:text-lg">"{currentTip.text}"</p>
+        <span className="mt-2 inline-block px-2 sm:px-3 py-1 text-xs sm:text-sm rounded-full bg-gray-200">{currentTip.category}</span>
       </div>
 
-      <div className="flex gap-3 mb-8">
-        <button onClick={getRandomTip} className="px-4 py-2 border rounded hover:bg-gray-100 cursor-pointer ">🔄 New Tip</button>
-        <button onClick={saveTip} className="px-4 py-2 bg-purple-400 text-white rounded hover:bg-purple-500 cursor-pointer ">🔖 Save Tip</button>
+      <div className="flex flex-col sm:flex-row gap-3 mb-6">
+        <button onClick={getRandomTip} className="w-full sm:w-auto px-4 py-2 border rounded hover:bg-gray-100 cursor-pointer">🔄 New Tip</button>
+        <button onClick={saveTip} className="w-full sm:w-auto px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-600 cursor-pointer">🔖 Save Tip</button>
       </div>
 
-      <h3 className="text-lg font-semibold mb-2">Saved Tips ({savedTips.length})</h3>
-      <div className="bg-white shadow-md rounded p-4">
+      <h3 className="text-base sm:text-lg font-semibold mb-2">Saved Tips ({savedTips.length})</h3>
+      <div className="bg-white shadow-md rounded p-3 sm:p-4 max-h-80 overflow-y-auto">
         {savedTips.length === 0 ? (
-          <p className="text-gray-500">You haven't saved any tips yet.</p>
+          <p className="text-gray-500 text-sm sm:text-base">You haven't saved any tips yet.</p>
         ) : (
           savedTips.map((tip, index) => (
-            <div key={index} className="flex justify-between items-center py-2 border-b last:border-none">
-              <div>
-                <p className="italic">"{tip.text}"</p>
-                <span className="text-sm text-gray-600">{tip.category}</span>
+            <div key={index} className="flex justify-between items-start gap-3 py-2 border-b last:border-none">
+              <div className="min-w-0">
+                <p className="italic text-sm sm:text-base break-words">"{tip.text}"</p>
+                <span className="text-xs sm:text-sm text-gray-600">{tip.category}</span>
               </div>
               <button
                 onClick={() => deleteTip(tip.text)}
-                className="text-red-500 hover:text-red-700  cursor-pointer "
+                className="text-red-500 hover:text-red-700 cursor-pointer whitespace-nowrap"
+                aria-label={`Delete tip: ${tip.text}`}
               >
                 🗑️ Delete
               </button>

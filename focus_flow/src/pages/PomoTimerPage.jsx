@@ -4,17 +4,16 @@ import PomoComp from '../components/PomoComp'
 import Searchbar from '../components/Searchbar'
 
 const PomoTimerPage = () => {
-  return (<>
-<div className='mt-[34px]'>
+  return (
+    <>
+      <div className="mt-6 px-3 sm:px-4">
+        <Searchbar />
+      </div>
 
-    <Searchbar />
-</div>
-
-    <div className='text-black  h-screen mt-[100px]'>
-     
-      <PomoComp />
-    </div>
-  </>
+      <div className="mt-6 px-3 sm:px-4 text-black">
+        <PomoComp />
+      </div>
+    </>
   )
 }
 

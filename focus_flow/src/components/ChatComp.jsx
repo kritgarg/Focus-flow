@@ -55,7 +55,7 @@ const ChatComp = () => {
   }, [messages]);
 
   return (
-    <div className="w-full md:w-[92%] lg:w-[82%] xl:w-[72%] mx-auto p-3 sm:p-4 bg-white shadow rounded-md min-h-[60vh] md:min-h-[70vh] flex flex-col">
+    <div className="w-full md:w-[92%] lg:w-[82%] xl:w-[72%] mx-auto p-3 sm:p-4 bg-white shadow rounded-md h-[70vh] md:h-[75vh] flex flex-col overflow-hidden">
       <div className="sticky top-0 bg-white pt-1 pb-2 z-10 border-b border-gray-200">
         <h2 className="text-lg sm:text-xl font-bold">🧠 Productivity Assistant</h2>
       </div>
